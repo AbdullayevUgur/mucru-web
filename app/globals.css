@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mucru-primary: #2F5F5F;
+  --mucru-secondary: #4A7C7C;
+  --mucru-accent: #D4AF37;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  .font-serif {
+    font-family: var(--font-playfair), serif;
+  }
+}
+
+@layer utilities {
+  .text-mucru-primary {
+    color: var(--mucru-primary);
+  }
+  
+  .bg-mucru-primary {
+    background-color: var(--mucru-primary);
+  }
+  
+  .border-mucru-primary {
+    border-color: var(--mucru-primary);
+  }
+  
+  .hover\:bg-mucru-primary\/90:hover {
+    background-color: rgb(47 95 95 / 0.9);
+  }
+  
+  /* Glowing gold text effect */
+  .made-in-azerbaijan {
+    color: #D4AF37;
+    text-shadow: 
+      0 0 5px #D4AF37,
+      0 0 10px #D4AF37,
+      0 0 15px #D4AF37,
+      0 0 20px #D4AF37;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Custom animations */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Loading states */
+.loading-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 
+      0 0 5px #D4AF37,
+      0 0 10px #D4AF37,
+      0 0 15px #D4AF37,
+      0 0 20px #D4AF37;
+  }
+  to {
+    text-shadow: 
+      0 0 10px #D4AF37,
+      0 0 20px #D4AF37,
+      0 0 30px #D4AF37,
+      0 0 40px #D4AF37;
+  }
+}
