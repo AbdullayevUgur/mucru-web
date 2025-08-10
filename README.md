@@ -1,30 +1,23 @@
-# Mucru luxury website
+# Mucru Luxury Jewelry Website
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A beautiful luxury jewelry website showcasing handcrafted pieces from Azerbaijan.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/taghizademahammad-6077s-projects/v0-mucru-luxury-website)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/E2HJPrJz13N)
+## Features
 
-## Overview
+- Elegant product showcase
+- Admin panel for product management
+- Responsive design
+- Modern UI with Tailwind CSS
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Getting Started
 
-## Deployment
+1. Clone the repository
+2. Install dependencies: `npm install --legacy-peer-deps`
+3. Run development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000)
 
-Your project is live at:
+## Admin Panel
 
-**[https://vercel.com/taghizademahammad-6077s-projects/v0-mucru-luxury-website](https://vercel.com/taghizademahammad-6077s-projects/v0-mucru-luxury-website)**
+Access the admin panel at `/admin` with password: `mucru2024`
 
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/E2HJPrJz13N](https://v0.dev/chat/projects/E2HJPrJz13N)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## Made in Azerbaijan with ❤️
